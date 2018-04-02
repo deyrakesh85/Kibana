@@ -2,7 +2,7 @@ FROM deyrakesh85/ubuntu:jdk8
 
 MAINTAINER Rakesh Dey <deyrakesh85@gmail.com>
 
-RUN groupadd -r kibana && useradd -r -g kibana -s /bin/bash -m /home/kibana kibana
+RUN groupadd -r kibana && useradd -r -g kibana -s /bin/bash -m kibana
 
 RUN wget https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-linux-x86_64.tar.gz
 
